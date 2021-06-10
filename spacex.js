@@ -3,9 +3,9 @@ module.exports.config = {
 	version: "1.0.0",
 	hasPermssion: 0,
 	credits: "loi",
-	description: "lấy ảnh trai",
-	commandCategory: "Hình ảnh",
-	usages: "gif bomman",
+	description: "lấy thông tin spacex",
+	commandCategory: "System",
+	usages: "còn cái nịt",
 	cooldowns: 5,
 	dependencies: ["request"],
 };
