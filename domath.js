@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "domath",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "loi",
+	credits: "CatalizCS",
 	description: "lấy ảnh trai",
 	commandCategory: "Hình ảnh",
 	usages: "gif bomman",
