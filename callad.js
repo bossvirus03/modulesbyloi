@@ -15,10 +15,13 @@ return api.sendMessage(body, handleReply.id, handleReply.messID);
 const request = require('request')
 const fs = require('fs')
 const axios = require("axios")	
+
+
 module.exports.run = async ({ event, api, args, client, Currencies, Users, utils, global, reminder }) => {
+const {ADMINBOT}  = global.config
 var idbox = event.threadID;
 	var content = args.join(' ');
-	        const listAdmin = global.config.ADMINBOT;
+	        const listAdmin = config.ADMINBOT;
 			if (!content) return api.sendMessage('Có vẻ như bạn chưa nhập thông tin, vui lòng nhập thông tin lỗi bạn gặp phải!', event.threadID, event.messageID);
 			var threadName = (await api.getThreadInfo(event.threadID)).name;		
  let data = await api.getUserInfo(event.senderID);			
